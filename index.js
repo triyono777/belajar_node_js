@@ -4,9 +4,19 @@ import express from "express";
 // init express
 const app = express();
  
-// basic route
+// Home route
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Welcome to Home Page');
+});
+ 
+// About route
+app.get('/about', (req, res) => {
+    res.send('Welcome to About Page');
+});
+ 
+// Contact route
+app.get('/contact', (req, res) => {
+    res.send('Welcome to Contact Page');
 });
  
 // listen on port
